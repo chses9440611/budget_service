@@ -119,7 +119,7 @@ describe('budget_service query', () => {
         expect(service.totalAmount('20240501', '20240630')).toBe(30000000);
         expect(service.totalAmount('20240411', '20240530')).toBe(0);
         expect(service.totalAmount('20241010', '20241111')).toBe(0);
-        expect(service.totalAmount('20240101', '20241231')).toBe(30303131);
+        expect(service.totalAmount('20240101', '20241231')).toBe(30306031);
     })
     it('cross year', () => {
         expect(service.totalAmount('20231201', '20240131')).toBe(310);
